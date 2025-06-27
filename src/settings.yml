@@ -9,7 +9,7 @@ polling_url: |
   {{ pixelfed_base_url }}/api/v1/accounts/verify_credentials
   {{ pixelfed_base_url }}/api/v1/accounts/{{ pixelfed_user_id }}/statuses
 polling_headers: Authorization=Bearer {{ pixelfed_api_key }}
-id: 106188
+id: 106505
 custom_fields:
 - keyname: author_bio
   name: About This Plugin
