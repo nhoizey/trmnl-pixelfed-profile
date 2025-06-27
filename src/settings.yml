@@ -7,22 +7,27 @@ polling_verb: get
 polling_url: |
   {{ pixelfed_base_url }}/api/v2/instance
   {{ pixelfed_base_url }}/api/v1/accounts/verify_credentials
-  {{ pixelfed_base_url }}/api/v1/timelines/home
+  {{ pixelfed_base_url }}/api/v1/accounts/{{ pixelfed_username }}
 polling_headers: Authorization=Bearer {{ pixelfed_api_key }}
 id: 103958
 custom_fields:
 - keyname: author_bio
   name: About This Plugin
   field_type: author_bio
-  description: Show latest photos from your Pixelfed timeline.
-  github_url: https://github.com/stephenyeargin/trmnl-pixelfed
+  description: Show latest photos from your Pixelfed profile.
+  github_url: https://github.com/nhoizey/trmnl-pixelfed-profile
   learn_more_url: https://pixelfed.org
-  email_address: stephen@yearg.in
+  email_address: nicolas@hoizey.com
 - keyname: pixelfed_base_url
   field_type: url
   name: Pixelfed Instance URL
   description: The base URL of your Pixelfed instance
   placeholder: https://pixelfed.social
+- keyname: pixelfed_username
+  field_type: string
+  name: Pixelfed username
+  description: Your username on your Pixelfed instance
+  placeholder: joe
 - keyname: pixelfed_api_key
   field_type: string
   name: Pixelfed API Key
@@ -42,5 +47,5 @@ custom_fields:
   - 3 columns x 3 rows: 3col_x_3row
   - 4 columns x 1 row: 4col_x_1row
   - 4 columns x 2 rows: 4col_x_2row
-name: Pixelfed
+name: Pixelfed profile
 refresh_interval: 60
