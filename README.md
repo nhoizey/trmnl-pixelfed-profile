@@ -1,3 +1,3 @@
-# Pixelfed for TRMNL
+# Pixelfed profile for TRMNL
 
-![screenshot](assets/screenshot.png)
+Based on a fork from Stephen Yeargin's [Pixelfed timeline plugin](https://github.com/stephenyeargin/trmnl-pixelfed).
