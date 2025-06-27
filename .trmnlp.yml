@@ -8,7 +8,8 @@ watch:
 
 # values of custom fields (defined in src/settings.yml)
 custom_fields: {
-  pixelfed_base_url: https://photos.yeargin.social,
+  pixelfed_base_url: https://pixelfed.social,
+  pixelfed_username: 'nhoizey',
   pixelfed_api_key: '{{ env.PIXELFED_API_KEY }}',
   pixelfed_layout: '4col_x_2row'
 }
@@ -17,6 +18,6 @@ custom_fields: {
 variables:
   trmnl: {
     plugin_settings: {
-      instance_name: 'Pixelfed'
+      instance_name: 'Pixelfed profile'
     }
   }
