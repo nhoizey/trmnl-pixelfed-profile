@@ -7,7 +7,7 @@ polling_verb: get
 polling_url: |
   {{ pixelfed_base_url }}/api/v2/instance
   {{ pixelfed_base_url }}/api/v1/accounts/verify_credentials
-  {{ pixelfed_base_url }}/api/v1/accounts/{{ pixelfed_username }}/statuses
+  {{ pixelfed_base_url }}/api/v1/accounts/{{ pixelfed_user_id }}/statuses
 polling_headers: Authorization=Bearer {{ pixelfed_api_key }}
 id: 106188
 custom_fields:
@@ -23,11 +23,11 @@ custom_fields:
   name: Pixelfed Instance URL
   description: The base URL of your Pixelfed instance
   placeholder: https://pixelfed.social
-- keyname: pixelfed_username
+- keyname: pixelfed_user_id
   field_type: string
-  name: Pixelfed username
-  description: Your username on your Pixelfed instance
-  placeholder: joe
+  name: Pixelfed user ID
+  description: Your ID on your Pixelfed instance
+  placeholder: 406
 - keyname: pixelfed_api_key
   field_type: string
   name: Pixelfed API Key
