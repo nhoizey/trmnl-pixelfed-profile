@@ -14,7 +14,7 @@ custom_fields:
 - keyname: author_bio
   name: About This Plugin
   field_type: author_bio
-  description: Show latest photos from your Pixelfed profile.
+  description: Shows latest photos from your Pixelfed profile.
   github_url: https://github.com/nhoizey/trmnl-pixelfed-profile
   learn_more_url: https://pixelfed.org
   email_address: nicolas@hoizey.com
@@ -27,6 +27,7 @@ custom_fields:
   field_type: string
   name: Pixelfed user ID
   description: Your ID on your Pixelfed instance
+  help_text: The number at the end of your profile URL (for example <pre>https://pixelfed.social/i/web/profile/406</pre>).
   placeholder: 406
 - keyname: pixelfed_api_key
   field_type: string
@@ -37,7 +38,7 @@ custom_fields:
   field_type: select
   name: Layout
   description: How to present the photos
-  default: 4col_x_2row
+  default: 3col_x_2row
   options:
   - 1 column x 1 row: 1col_x_1row
   - 2 columns x 1 row: 2col_x_1row
