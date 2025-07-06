@@ -4,4 +4,6 @@ This is a plugin for [TRMNL](https://usetrmnl.com/) that allows you to view the 
 
 ![Screenshot of the plugin in TRMNL](assets/screenshot.png)
 
+Install is from here: https://usetrmnl.com/recipes/106505
+
 The code is based on a fork from Stephen Yeargin's [Pixelfed timeline plugin](https://github.com/stephenyeargin/trmnl-pixelfed).
